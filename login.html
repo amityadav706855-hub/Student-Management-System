@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<div class="row my-5">
+    <div class="col-md-4 mx-auto">
+        <div class="card p-3">
+
+            <main class="form-signin w-100 mx-auto" >
+                <form method="post" action="{% url 'logcode' %}">
+                  {% csrf_token %}
+                  <span style="font-size:50px; margin-left: 170px; color: blue;" ><i class="fa-solid fa-users"></i></span>
+                  <h1 class="h3 mb-3 fw-normal text-center">welcome user</h1>
+                  {% if msg %}
+                  <div class="alert alert-danger" role="alert">{{msg}}</div>
+                  {% endif %}
+
+                  <div class="form-floating">
+                    <select class="form-select" id="utype" name="usertype" required >
+                        <option selected value="none">---select User---</option>
+                        <option value="admin">Admin</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="student">Student</option>
+                      </select>
+                    <label for="utype">select user type</label>
+                  </div>
+              
+                  <div class="form-floating">
+                    <input name="userid" type="text" class="form-control" id="uid" placeholder="name@example.com">
+                    <label for="uid">enter user id</label>
+                  </div>
+                  <div class="form-floating">
+                    <input name="password" type="password" class="form-control" id="Password" placeholder="Password">
+                    <label for="Password">Password</label>
+                  </div>
+              
+                  <div class="form-check text-start my-3">
+                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Remember me
+                    </label>
+                  </div>
+                  <button class="btn btn-primary w-100 py-2" type="submit">SIGN</button>
+                 
+                </form>
+              </main>
+
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

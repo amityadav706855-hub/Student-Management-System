@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+
+<div class="container-fluid p-0">
+  <div class="row">
+      <div id="lo">
+<div id="mi">  <a href="{% url 'index' %}">HOME &nbsp;&nbsp; </a><span style="color: white;"> /&nbsp;&nbsp; gallery</span>
+<br><br>
+<span style="color: white; font-size: 30px;">gallery</span>
+</div>
+
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid p-0" style="background-color: #F7F7F7;">
+  <div class="row ">
+     <div class="col-sm-10 mx-auto">
+      <div class="row pt-5 mt-5 mb-5 pb-5">
+        <div class="col-sm-6"><iframe width="560" height="315" src="https://www.youtube.com/embed/M1156iKJgNo?si=bPrQvgKNxcM0CpDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      </div>
+  </div>
+ </div>
+</div>
+{% endblock %}

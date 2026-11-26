@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block body %}
+
+
+
+
+<div class="row">
+  <div class="col-sm-12">
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/BD-award-2024-min.jpeg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/Popup-1-min.jpg' %}" class="d-block w-100" height="409" width="1200" alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- notification start -->
+<div class="row">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-3 bg-danger">
+        <h4 class="text-light"> Notification</h4>
+      </div>
+      <div class="col-sm-9">
+        <marquee behaviour="" direction="">
+          {% for n in noti %}
+          <span><a href="{{n.doc.url}}" target="_blank">{{n.text}}</a></span>
+          {% endfor %}
+        </marquee>
+      </div>
+    </div>
+
+  </div>
+</div>
+ 
+<!-- notification end -->
+
+
+<div class=" container-fluid ">
+  <div class=" row pt-3 pb-3 text-center" style="background-color: #9E313F;">
+        <div class="col-sm-12 ">
+          <b style="color: white; font-size:15px;">TO KNOW ADMISSION PROCESS, CALL – 9044554046, 9044554045</b>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container  pb-5">
+      <div class="row text-center pb-5">
+        <div class="col-sm-12"><b style="color: black; font-size: 40px;">Welcome to Seth Anandram Jaipuria School, Sadhu
+            Campus - Barabanki</b></div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-6"> <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/M1156iKJgNo?si=G20sIKjpDLW6p_zg" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <span
+            style="color: black; font-size: 17px;">We, at <b style="font-weight: 1000;"> Seth Anandram Jaipuria School,
+              Sadhu Campus - Barabanki,</b> are committed to our motto<b style="font-weight: 1000;"> ‘Empower, Enthuse
+              and Excel’</b> in providing quality education and teaching every child the necessary values to guide
+            him/her through the journey of life. The school endows education for LIFE! Our prime mission is to create
+            opportunities through a stimulating, safe, collaborative, and supportive environment that help student in
+            attaining personal mastery, team spirit, and academic excellence.</span> </div>
+        <div class="col-sm-6">
+          <img
+            src="{% static 'images/Refresher-Training-Collage-4-1-7g719royk2211ijfa8yfn4ohlgyvy8haduyhktgb1hs.jpg' %}"
+            width="100%" alt="">
+
+          <div style="box-shadow: 2px 2px 2px 2px gray;"><a href="#" style="font-size: 17px; text-decoration: none;">
+              &nbsp;&nbsp;&nbsp;3rd Refresher Training Certificate Distribute</a>
+            <br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;read more<br><br><br><br>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="row pt-5">
+        <div class="col-sm-6">
+          <img src="{% static 'images/pri-primary-1536x1023.png' %}" width="100%" alt=""><br><br>
+          <b style="font-weight: 1200; color: black; font-size: 20px; font-family: serif;">PRE-PRIMARY & PRIMARY
+            SCHOOL</b>
+          <br><b style="color: black;">_______</b><br><br>
+          <b style="color: black; ">
+            <h6>The goal of education is not to increase the amount of knowledge but to create the possibilities for a
+              child to invent and discover, to create individuals who are capable of doing.</h6>
+          </b>
+        </div>
+        <div class="col-sm-6">
+          <img src="{% static 'images/midleclass.png' %}" width="100%" alt=""><br><br>
+          <b style="font-weight: 1200; color: black; font-size: 20px; font-family: serif;">MIDDLE SCHOOL</b>
+          <br><b style="color: black;">_______</b><br><br>
+          <b style="color: black; ">
+            <h6>Student-centered teaching strategies focus instruction on the needs, preferences, and interests of the
+              learner. Teachers act as facilitators of the learning process.</h6>
+          </b>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-sm-12" id="guru">
+          <div class="row">
+            <div class="col-sm-6">
+              <br><br><br><br><br><br>
+              <span style="color: white; margin-left: 140px;  font-family: calbri;"> <b
+                  style="font-size: 30px; margin-top: 20px;"> UNIQUE FEATURES</b>
+                <br><b style=" margin-left:140px;">Seth Anandram Jaipuria School, Sadhu Campus –
+                  Barabanki</b><br><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px; margin-left: 150px;  "><span
+                      style="font-family: calbri;"> Multipurpose Playground</span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px; margin-left: 150px;  "><span
+                      style="font-family: calbri;"> RJ Studio </span></i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px; margin-left: 150px;  "><span
+                      style="font-family: calbri;"> Computer Lab</span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px; margin-left: 150px;  "><span
+                      style="font-family: calbri;"> Art & Craft room </span></i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px; margin-left: 150px;  "><span
+                      style="font-family: calbri;"> Composite Science Lab </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px; margin-left: 150px;  "><span
+                      style="font-family: calbri;"> Music Room </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px; margin-left: 150px;  "><span
+                      style="font-family: calbri;"> Dance Room </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px; margin-left: 150px;  "><span
+                      style="font-family: calbri;"> Well Stocked Library </span> </i></b><br>
+
+              </span>
+            </div>
+
+            <div class="col-sm-6">
+              <br><br><br><br><br><br> <br><br><br><br><br><br>
+              <span style="color: white;   font-family: calbri;">
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px;   "><span style="font-family: calbri;">
+                      Monitored Surveillance & Security </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px;   "><span style="font-family: calbri;">
+                      GPS tracked School buses </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px;   "><span style="font-family: calbri;">
+                      Outdoor Kids Play Zone </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px;   "><span style="font-family: calbri;">
+                      School Infirmary </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px;   "><span style="font-family: calbri;">
+                      Kids Activity Room </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px;   "><span style="font-family: calbri;">
+                      Badminton Court </span> </i></b><br><br>
+                <b><i class="fa-solid fa-angles-right" style="font-size: 15px;   "><span style="font-family: calbri;">
+                      Upcoming facilities: Basketball Arena30 </span> </i></b><br><br>
+
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-sm-12" id="nda">
+          <div class="row">
+            <div class="col-sm-3"
+              style="color: white; background-color: #370fd848; border-left: 5px solid maroon; margin-top: 35px; margin-left: 100px;">
+              <b style="font-size: 25px; "> Admissions Open 2024-25</b><br>
+
+              Seth Anandram Jaipuria School,Sadhu<br> Campus, Barabanki
+            </div>
+            <button class="border-0"
+              style=" margin-top: 40px; margin-left: 600px;  color:black; background-color: #D18211; height: 60px; width: 120px; font-size: larger;">APPLY
+              NOW</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    {% endblock %}

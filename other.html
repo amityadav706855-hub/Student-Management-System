@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<div class="container-fluid p-0">
+  <div class="row">
+      <div id="lo">
+<div id="mi">  <a href="{% url 'index' %}">HOME &nbsp;&nbsp; </a><span style="color: white;"> /&nbsp;&nbsp; OTHER</span>
+<br><br>
+<span style="color: white; font-size: 30px;">OTHER</span>
+</div>
+
+      </div>
+  </div>
+</div>
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+<div class="container">
+  <div class="row pt-5 mt-5 pb-5 mb-5 ">
+    <div class="col-sm-4  margin-left:15px; ">
+      <a style="text-decoration:none; color: white;  " href="{% url 'mera1' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ;"> Computer Lab </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera2' %}"><div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;">Language Lab  </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera3' %}"><div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Robotics Lab </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera4' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;">Music & Dance Room  </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera5' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Composite Science Lab </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera6' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Library </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera7' %}"><div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;">Healthcare & Medical Fitness  </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera8' %}"><div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;">Social Science Lab  </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera9' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Art & Craft Room </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera10' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Internal Auditorium/Multipurpose Hall </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera11' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;">Indoor Games Room  </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera12' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Outdoor Sports </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera13' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Sports Complex (Indoor Sports) </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera14' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Canteen Facility </div></a>
+      <a style="color: white; text-decoration: none;  " href="{% url 'mera15' %}"> <div  style="background-color: #0058A9;   margin-left: 30px; padding: 8px; font-size: 15px; color: white; border-radius: 7px 0px 0px 7px ; margin-top: 5px;"> Co-Curricular Activities </div></a>
+    </div>
+    <div class="col-sm-8 p-0">
+      <div style="background-color: #E7BC32; ">
+        
+      {% block abc %}
+
+      {% endblock %}
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

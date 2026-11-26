@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+
+<div class="container-fluid p-0">
+  <div class="row">
+      <div id="lo">
+<div id="mi">  <a href="{% url 'index' %}">HOME &nbsp;&nbsp; </a><span style="color: white;"> /&nbsp;&nbsp; FEES</span>
+<br><br>
+<span style="color: white; font-size: 30px;">FEES</span>
+</div>
+
+      </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 mx-auto mt-5  mb-5 pb-5">
+      <img src="{% static 'images/Download_fee_structure.jpg' %}" width="100%" alt=""><br><br><br>
+      <div style="height: 60px; width: 320px; background-color: #0088CC; color: white; font-size: large; border-radius: 9px; font-weight: 700; "><span style="margin-left: 30px; ">Download Fee Structure 2024</span></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

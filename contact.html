@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+<div class="row"> 
+<div class="col-sm-12 "> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2039858345374!2d81.53935981105575!3d26.833463563394528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a2b20aede4817%3A0x3b01691a0b580533!2z4KS44KWH4KSgIOCkhuCkqOCkguCkpuCksOCkvuCkriDgpJzgpK_gpKrgpYHgpLDgpL_gpK_gpL4g4KS44KWN4KSV4KWC4KSyLCDgpLXgpYfgpKYg4KSV4KWI4KSu4KWN4KSq4KS4LCDgpKzgpL7gpLDgpL7gpKzgpILgpJXgpYAgTW9iLiA5NDE1NTIwMTMw!5e0!3m2!1shi!2sin!4v1725884914082!5m2!1shi!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>  
+</div>
+
+<div class="row my-5 pb-5">
+  <h1 class="text-center">contact us</h1>
+  <div class="col-sm-10 mx-auto shadow">
+    <div class="row">
+      {% if msg %}
+      <div class="col-sm-12">
+        <div class="alert alert-danger text-center" role="alert">{{msg}}</div>
+      </div>
+   {% endif %}
+      <div class="col-sm-6">
+        <img src="{%static 'images/Screenshot (2).png'%}"- alt="" class="h-100 w-100"/>
+      </div>
+      <div class="col-sm-6" style="border:2px solid black">
+     <form method="post" class="row">  
+       
+{% csrf_token %}
+
+      <form class="row g-3 ">
+
+        <div class="col-md-12">
+          <label  for="name" class="form-label">Name</label>
+          <input name="name" type="text" class="form-control" id="name">
+          
+        </div>
+      
+        <form class="row g-3 ">
+          <div class="col-md-12">
+            <label  for="gender" class="form-label">Gender</label>
+            <input name="gender" type="radio" value="male" class="form-control-input" id="gender">male
+            <input name="gender" type="radio" value="female" class="form-control-input" id="gender">female
+          </div>
+  
+          <div class="col-md-12">
+            <label  for="address" class="form-label">Address</label>
+            <input name="address" type="textarea" class="form-control" id="address">
+            
+          </div>
+  
+          <div class="col-md-12">
+            <label  for="contactno" class="form-label">Contact No</label>
+            <input name="contactno" type="text" class="form-control" id="contactno">
+            
+          </div>
+  
+          <div class="col-md-12">
+            <label  for="email" class="form-label">emailaddress</label>
+            <input name="emailaddress" type="email" class="form-control" id="emailaddress">
+            
+          </div>
+  
+          <div class="col-md-12">
+            <label  for="enquirytext" class="form-label">enquiry text</label>
+            <textarea name="enquirytext" class="form-control" id="enquirytext"></textarea>
+            
+          </div>
+  
+  
+  
+  
+  <br>
+  <br>
+          
+        <div class="col-12 pt-5 mx-5 ms-5 ps-5 pb-3">
+          <button type="submit" class="btn btn-primary ">Sign in</button>
+        </div>
+      </form>
+
+
+
+
+
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
